@@ -1,0 +1,83 @@
+<nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                        <a href="#/paginas/bemVindo.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Pro Ativo</li>
+        </ol>
+</nav>
+
+
+<div class="modal fade" id="produtividade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <div class="modal-header bg-warning">
+                                <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Seu Desempenho</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <div class="modal-body">
+                                <div class="fluid">
+
+
+                                        <div class="input-group input-group-lg mb-3">
+                                                <div class="input-group-prepend">
+                                                        <span class="input-group-text text-light bg-dark" id="inputGroup-sizing-lg">Media Dia:</span>
+                                                </div>
+                                                <input id='displayMedia' readonly="true" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                        </div>
+                                        <div class="input-group input-group-lg mb-3">
+                                                <div class="input-group-prepend">
+                                                        <span class="input-group-text text-light bg-dark" id="inputGroup-sizing-lg">Media Meta:</span>
+                                                </div>
+                                                <input id='displayMeta' readonly="true" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                        </div>
+                                        <div class="input-group input-group-lg mb-3">
+                                                <div class="input-group-prepend">
+                                                        <span class="input-group-text text-light bg-dark" id="inputGroup-sizing-lg">Valor da Faixa:</span>
+                                                </div>
+                                                <input id='faixaValor' readonly="true" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                        </div>
+
+                                </div>
+                        </div>
+
+
+                </div>
+        </div>
+</div>
+
+
+<div class="container fluid py-2 px-5">
+
+        <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Dias Trabalhados:</span>
+                </div>
+                <input id="workedDays" type="number" min="1" max="30" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Acionamentos:</span>
+                </div>
+                <input id="amount" type="number" min="1" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Meta Acionamentos Dia:</span>
+                </div>
+                <input id="goal" type="number" min="1" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Dias Restantes:</span>
+                </div>
+                <input id="daysRemaining" type="number" min="0" max="30" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+</div>
+
+<div id="button" class="d-flex justify-content-center">
+        <button id="calc" onclick="calcProAtivo()" type="button" data-toggle="modal" data-target="#produtividade" class="btn btn-success btn-lg mr-3">Calcular</button>
+</div>

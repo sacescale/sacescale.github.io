@@ -1,0 +1,13 @@
+
+#formProAtivo{
+    display:block;
+    /*border: 1px solid red;*/
+}
+
+
+/*                        Edição do Formulario Receptivo                     */
+
+#formReceptivo{
+    display:none;
+
+}
